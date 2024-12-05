@@ -12,14 +12,25 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-            <Route path='/' element={<Body />} />
+          <Route path='/' element={
+            <>
+              <div className="container my-3">
+                <Body />
+              </div>
+            </>
+          } />
           <Route path='/RandomGenerater' element={
-          <>
-            <Body/>
-            <hr/>
-            <ButtonClick/>
-            <PostComponent/>
-          </>} />
+            <>
+            <div className="container my-3">
+              <Body />
+            </div>
+              <hr />
+              <div className="d-flex justify-content-center">
+              <ButtonClick />
+              <PostComponent />
+              </div>
+            </>
+          } />
         </Routes>
         <Footer />
       </Router>
