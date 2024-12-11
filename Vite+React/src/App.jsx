@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar />
+        <Navbar title="MyTodos"/>
         <Routes>
           <Route path='/' element={
             <>
