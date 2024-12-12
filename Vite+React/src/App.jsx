@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 // import PostComponent from './Components/PostComponent';
 import ButtonClick from './Components/ButtonClick';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import TodosActions from './Components/TodosActions';
 
 function App() {
   return (
@@ -12,6 +13,11 @@ function App() {
       <Router>
         <Navbar title="MyTodos"/>
         <Routes>
+          <Route path='/TodoList' element={
+          <>
+          <TodosActions/>
+          </>
+          }/>
           <Route path='/' element={
             <>
               <div className="container my-3">
